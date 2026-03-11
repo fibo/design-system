@@ -1,0 +1,10 @@
+/** Avoid overflow caused by embedded content */
+audio, iframe, img, svg, video {
+  max-block-size: 100%;
+  max-inline-size: 100%;
+}
+
+/** Turn images into block elements */
+img {
+  display: block;
+}

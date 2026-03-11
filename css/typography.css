@@ -1,4 +1,11 @@
 :root {
+	/** System Font stacks from modernfontstacks.com */
+	--font-sans: system-ui, sans-serif;
+	--font-sans2: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+	--font-serif: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+	--font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+
+	/** Font sizes based on Golden Section */
 	--font-size: 16px;
 	--font-size-small: 10px;
 	--font-size-1: 110px;
@@ -7,8 +14,20 @@
 	--font-size-4: 26px;
 }
 
+html {
+	/** Disable text size adjustment */
+	-moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 body {
+	font-family: var(--font-sans);
 	font-size: var(--font-size);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-serif);
 }
 
 h1 {
@@ -26,3 +45,28 @@ h4 {
 h5, h6 {
 	font-size: var(--font-size);
 }
+
+p {
+	line-height: 1.618;
+}
+
+small, sub {
+	font-size: var(--font-size-small);
+}
+
+code {
+	font-family: var(--font-mono);
+}
+
+/** Font styling in form elements */
+button, input, select, textarea {
+  font-size: var(--font-size);
+	line-height: 1.618;
+}
+input, textarea {
+  font-family: var(--font-sans);
+}
+button, input[type="submit"], input[type="reset"], label {
+  font-family: var(--font-sans2);
+}
+
