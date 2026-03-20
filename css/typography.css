@@ -58,15 +58,23 @@ code {
 	font-family: var(--font-mono);
 }
 
-/** Font styling in form elements */
-button, input, select, textarea {
+/** Form elements */
+
+button,
+input,
+input[type="submit"], input[type="reset"],
+select,
+textarea {
   font-size: var(--font-size);
-	line-height: 1.618;
 }
+
 input, textarea {
   font-family: var(--font-sans);
 }
-button, input[type="submit"], input[type="reset"], label {
+
+button,
+input[type="submit"], input[type="reset"],
+label {
   font-family: var(--font-sans2);
 }
 

@@ -43,3 +43,16 @@ Prefer using _System Fonts_, with the following typefaces:
 
 Optionally use two sans serif font families to differentiate between content and form elements.
 
+## Spacing based on Fibonacci Sequence
+
+Define the smallest possible unit, for instance `--unit-1: 2px`, to be used to draw lines like a border width.
+The second unit will be the double of first unit.
+All other units are the sum of the two previous ones, following _Fibonacci Sequence_.
+
+## Colors
+
+Define an accent color, it can be the brand color or even black. It will be used to drive attention and highlight, for example on a focus element.
+
+Create _paper_ and _ink_ color shades, respectively background and text colors.
+
+

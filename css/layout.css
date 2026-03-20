@@ -1,3 +1,15 @@
+:root {
+	/** Space units based on Fibonacci Sequence */
+	--unit-1: 2px;
+	--unit-2: 4px;
+	--unit-3: 6px;
+	--unit-4: 10px;
+	--unit-5: 16px;
+	--unit-6: 26px;
+	--unit-7: 42px;
+	--unit-8: 68px;
+}
+
 /** Avoid overflow caused by embedded content */
 audio, iframe, img, svg, video {
   max-block-size: 100%;
@@ -7,4 +19,16 @@ audio, iframe, img, svg, video {
 /** Turn images into block elements */
 img {
   display: block;
+}
+
+/** Form elements */
+
+button,
+input,
+input[type="submit"], input[type="reset"],
+select,
+textarea {
+	border-width: var(--unit-1);
+	border-radius: var(--unit-2);
+	padding: var(--unit-2) var(--unit-3);
 }

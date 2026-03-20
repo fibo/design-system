@@ -1,0 +1,19 @@
+:root {
+	--accent-color: black;
+	--paper-1: #fff;
+	--paper-2: #eee;
+
+	--ink-1: #000;
+	--ink-2: #ccc;
+}
+
+/** Form elements */
+
+button,
+input,
+input[type="submit"], input[type="reset"],
+select,
+textarea {
+	border-color: var(--ink-2);
+	outline-color: var(--accent-color);
+}
