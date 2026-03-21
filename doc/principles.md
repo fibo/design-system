@@ -4,13 +4,13 @@
 
 > inputs, outputs and links
 
-A web document is like a __function__, with _inputs_ and _outputs_.
+A web document is like a **function**, with _inputs_ and _outputs_.
 
-The client can get information via the __outputs__, which is the information displayed on the page.
+The client can get information via the **outputs**, which is the information displayed on the page.
 
-Users can interact with the page through the __inputs__, which are all the interactive elements, for example form controls like buttons, text inputs, and sliders.
+Users can interact with the page through the **inputs**, which are all the interactive elements, for example form controls like buttons, text inputs, and sliders.
 
-Another category is represented by _links_, which are __pointers__ to other documents that provide other functionalities.
+Another category is represented by _links_, which are **pointers** to other documents that provide other functionalities.
 
 ## Bend rules
 
@@ -30,7 +30,7 @@ Use sizes based on the _Golden Section_.
 Phi is `1.618`, so for example:
 
 - small font size = base font size / Phi
-- heading 1 font size = heading 2 font size * Phi
+- heading 1 font size = heading 2 font size \* Phi
 - default `line-height` is Phi
 
 ## Typography

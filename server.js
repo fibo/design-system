@@ -3,19 +3,21 @@ import { readFile } from 'node:fs'
 import { createServer } from 'node:http'
 import { networkInterfaces, platform } from 'node:os'
 
+import { generatePages } from './script/generate_pages.js'
+
 const port = process.env.PORT ?? 3000
 
-const server = createServer((req, res) => {
-	// Ignore URLs like Chrome DevTools
-	// /.well-known/appspecific/com.chrome.devtools.json
-	if (req.url.startsWith('/.well-known'))
-		return
+await generatePages()
 
-	// Assuming (req.method == 'GET')
-	readFile(
-		`.${req.url == '/' ? '/index.html' : req.url}`,
-		(err, data) => err ? res.writeHead(400).end() : res.end(data)
-	)
+const server = createServer((req, res) => {
+  // Ignore URLs like Chrome DevTools
+  // /.well-known/appspecific/com.chrome.devtools.json
+  if (req.url.startsWith('/.well-known')) return
+
+  // Assuming (req.method == 'GET')
+  readFile(`.${req.url == '/' ? '/index.html' : req.url}`, (err, data) =>
+    err ? res.writeHead(400).end() : res.end(data)
+  )
 })
 
 server.listen(port, () => {
@@ -33,10 +35,14 @@ server.listen(port, () => {
       }
 
   // Open default browser.
-  switch(platform()) {
-    case 'darwin': exec(`open ${localUrl}`)
-    case 'linux': exec(`xdg-open ${localUrl}`)
-    case 'win32': exec(`start ${localUrl}`)
-    default: console.info(`Server started on ${externalUrl}`)
+  switch (platform()) {
+    case 'darwin':
+      exec(`open ${localUrl}`)
+    case 'linux':
+      exec(`xdg-open ${localUrl}`)
+    case 'win32':
+      exec(`start ${localUrl}`)
+    default:
+      console.info(`Server started on ${externalUrl}`)
   }
 })
