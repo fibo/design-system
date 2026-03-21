@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>&lrm;</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/colors.css" />
+</head>
+<body>
+  <h1>Favicon</h1>
+  <p>
+    You can start with an empty favicon. Just add this snippet to your
+    <code>head</code> pages.
+  </p>
+  <pre><code class="language-html">&lt;link rel=&quot;icon&quot; href=&quot;data:image/x-icon;base64,AA&quot; /&gt;
+</code></pre>
+  <p>
+    Once you have an idea for a logo, you can start creating a 512x512 SVG image
+    like <a href="../assets/logo.svg">this logo.svg</a>.
+  </p>
+  <p>You can start with something like this.</p>
+  <pre><code class="language-svg">&lt;svg
+  version=&quot;1.1&quot;
+  viewPort=&quot;0 0 512 512&quot;
+  width=&quot;512&quot; height=&quot;512&quot;
+  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+&gt;
+  &lt;rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;black&quot; /&gt;
+  &lt;circle cx=&quot;256&quot; cy=&quot;256&quot; r=&quot;250&quot; fill=&quot;none&quot; stroke=&quot;magenta&quot; /&gt;
+&lt;/svg&gt;
+</code></pre>
+  <p>
+    The rectangle and the circle are just guides. The rectangle could be removed
+    or turned to <code>transparent</code>. The circle is usually the area that
+    will contain the logo.
+  </p>
+  <p>
+    You may want to create several versions of the logo. For example an animated
+    version. For example the favicon may be a streamlined version of the logo.
+    See for example this <a href="../assets/favicon.svg">favicon.svg</a>.
+  </p>
+  <p>
+    There are also some contexts where the logo could be masked. Usually the
+    safe area is 409x409, so the circle should have a <em>radius</em> smaller
+    than <code>204</code>.
+  </p>
+  <p>
+    You can use <a href="https://maskable.app/">maskable.app</a> to check you
+    icon.
+  </p>
+  <p>
+    See also how
+    <a
+      href="https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs"
+      >Evil Martians recommend to add a favicon</a
+    >.
+  </p>
+</body>

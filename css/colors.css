@@ -1,46 +1,53 @@
 :root {
-	--accent-color: black;
+  --accent-color: black;
 
-	--paper-1: #fff;
-	--paper-2: #eee;
-	--paper-3: #ddd;
+  --paper-1: #fff;
+  --paper-2: #eee;
+  --paper-3: #ddd;
 
-	--ink-1: #000;
-	--ink-2: #111;
-	--ink-3: #222;
-	--ink-4: #333;
+  --ink-1: #000;
+  --ink-2: #111;
+  --ink-3: #222;
+  --ink-4: #333;
 }
 
 body {
-	background: var(--paper-2);
+  background: var(--paper-2);
 }
 
-h1, h2, h3, h4, h5, h6, b, strong {
-	color: var(--ink-1);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  color: var(--ink-1);
 }
 
 p {
-	color: var(--ink-2);
+  color: var(--ink-2);
 }
 
 blockquote {
-	color: var(--ink-3);
+  color: var(--ink-3);
 }
 
 /** Form elements */
 
 button,
 input,
-input[type="submit"], input[type="reset"],
+input[type='submit'],
+input[type='reset'],
 select,
 textarea {
-	border-color: var(--ink-4);
-	outline-color: var(--accent-color);
+  border-color: var(--ink-4);
+  outline-color: var(--accent-color);
 }
 
 input,
 select,
 textarea {
-	background: var(--paper-1);
+  background: var(--paper-1);
 }
-

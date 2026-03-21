@@ -1,0 +1,16 @@
+encoding: utf-8
+
+exclude:
+  - .editorconfig
+  - .npmrc
+  - .prettierrc.js
+  - AGENTS.md
+  - LICENSE
+  - README.md
+  - doc/
+  - html/
+  - package-lock.json
+  - package.json
+  - page/README.md
+  - script/
+  - server.js

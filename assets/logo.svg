@@ -1,0 +1,24 @@
+<svg
+  version="1.1"
+  viewBox="0 0 512 512"
+  width="512" height="512"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle cx="256" cy="256" r="240" fill="black" />
+  <path d="M 256 68 A 55 55 20 0 1 256 420" fill="white" />
+  <path
+    d="M314,146 C246,46 145,161 256,210 C389,269 373,342 323,384 C272,427 161,411 150,338 C142,289 164,252 215,226"
+    fill="none" stroke="#A53A51" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"
+    pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"
+  >
+    <animate
+      attributeName="stroke-dashoffset"
+      values="100;0"
+      keyTimes="0;1"
+      dur="1.7s"
+      fill="freeze"
+      calcMode="spline"
+      keySplines="0.6 0 0.9 1"
+    />
+  </path>
+</svg>
