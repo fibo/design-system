@@ -14,5 +14,8 @@
   },
   "devDependencies": {
     "prettier": "3.8.1"
+  },
+  "dependencies": {
+    "design-canvas": "0.1.0"
   }
 }

@@ -3,12 +3,14 @@ encoding: utf-8
 exclude:
   - .editorconfig
   - .npmrc
+  - .prettierignore
   - .prettierrc.json
   - LICENSE
   - README.md
-  - package.json
-  - package-lock.json
-  - server.js
   - doc/
   - html/
+  - js/lib/README.md
+  - package-lock.json
+  - package.json
   - script/
+  - server.js
