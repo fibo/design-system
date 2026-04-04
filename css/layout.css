@@ -10,6 +10,11 @@
   --size-8: 68px;
 }
 
+html {
+  /* Prevent scrollbar to shift layout */
+  scrollbar-gutter: stable;
+}
+
 /** Avoid overflow caused by embedded content */
 audio,
 iframe,
