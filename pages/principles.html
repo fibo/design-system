@@ -1,0 +1,111 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>&lrm;</title>
+  <link rel="icon" href="data:image/x-icon;base64,AA" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/colors.css" />
+</head>
+
+<body>
+  <h1>Design System</h1>
+  <blockquote>
+    <p>a flexible framework to create a minimal and adaptable UI</p>
+  </blockquote>
+  <h2>Functionality</h2>
+  <blockquote>
+    <p>inputs, outputs and links</p>
+  </blockquote>
+  <p>
+    A web document is like a <strong>function</strong>, with <em>inputs</em> and
+    <em>outputs</em>.
+  </p>
+  <p>
+    The client can get information via the <strong>outputs</strong>, which is
+    the information displayed on the page.
+  </p>
+  <p>
+    Users can interact with the page through the <strong>inputs</strong>, which
+    are all the interactive elements, for example form controls like buttons,
+    text inputs, and sliders.
+  </p>
+  <p>
+    Another category is represented by <em>links</em>, which are
+    <strong>pointers</strong> to other documents that provide other
+    functionalities.
+  </p>
+  <h2>Bend rules</h2>
+  <p>Straight lines do not exist. Geodetics are curves.</p>
+  <p>
+    So the rules in this document should be adapted case by case. Creating a web
+    document is a creative process. The recommendation is not to just grab the
+    whole CSS implementation <em>&quot;as is&quot;</em> but to copy only the
+    things that make sense and optionally modify them according to the specific
+    web page or project.
+  </p>
+  <h2>HTML tags</h2>
+  <p>
+    Prefer using HTML tags with no classes, and take into consideration the
+    <em>semantic</em> meaning of each tag.
+  </p>
+  <p>
+    Every HTML tag that can be emitted by a Markdown parser (compatible with the
+    <em>CommonMark Spec</em>) should be styled to provide a good design
+    <em>out of the box</em>.
+  </p>
+  <h2>Golden Section</h2>
+  <p>
+    Use sizes based on the <em>Golden Section</em>. Phi is <code>1.618</code>,
+    so for example:
+  </p>
+  <ul>
+    <li>small font size = base font size / Phi</li>
+    <li>heading 1 font size = heading 2 font size * Phi</li>
+    <li>default <code>line-height</code> is Phi</li>
+  </ul>
+  <h2>Typography</h2>
+  <p>Prefer using <em>System Fonts</em>, with the following typefaces:</p>
+  <ul>
+    <li>
+      <em>Serif Fonts</em> for headings and other elements that need emphasis.
+    </li>
+    <li><em>Monospaced Fonts</em> for code and technology related elements.</li>
+    <li><em>Sans Serif Fonts</em> for content and other elements.</li>
+  </ul>
+  <p>
+    Optionally use two sans serif font families to differentiate between content
+    and form elements.
+  </p>
+  <h2>Spacing based on Fibonacci Sequence</h2>
+  <p>
+    Define the smallest possible unit, for instance <code>--unit-1: 2px</code>,
+    to be used to draw lines like a border width. The second unit will be double
+    the first unit. All other units are the sum of the two previous ones,
+    following the <em>Fibonacci Sequence</em>.
+  </p>
+  <h2>Colors</h2>
+  <p>
+    Define an <em>accent color</em>; it can be the brand color or even black. It
+    will be used to drive attention and create highlights, for example on a
+    focused element.
+  </p>
+  <p>
+    Create <em>paper</em> and <em>ink</em> color shades, which are background
+    and text colors, respectively.
+  </p>
+  <p>
+    Color shades provide elevation. For example, a form can have a
+    <em>paper color</em> that is not the same as the page body. A form input
+    should have a lighter color, and a button should have a darker color. Inputs
+    should look behind their form. Buttons should look a bit elevated to make
+    them look clickable.
+  </p>
+  <p>
+    A color can be associated with an intentetion, for example a common choice
+    is to use red for danger. In this case keep prefer to keep consistency,
+    otherwise feel free to use a full spectrum color palette where it makes
+    sense.
+  </p>
+</body>

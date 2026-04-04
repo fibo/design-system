@@ -1,4 +1,6 @@
-# Design System Principles
+# Design System
+
+> a flexible framework to create a minimal and adaptable UI
 
 ## Functionality
 
