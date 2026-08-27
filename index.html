@@ -11,6 +11,41 @@
 <body>
   <h1>Design System</h1>
 
+  <style>
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+      gap: var(--size-5);
+
+      a {
+        text-decoration: none;
+        color: var(--ink-1);
+        background: var(--paper-2);
+        display: block;
+        font-size: var(--font-size-4);
+        min-height: 5em;
+        padding: 1em;
+      }
+    }
+  </style>
+
+  <div class="cards">
+    <a href="./page/principles.html">Principles</a>
+
+    <a href="./page/typography.html">Typography</a>
+
+    <a href="./page/colors.html">Colors</a>
+
+    <a href="./page/favicon.html">Favicon</a>
+  </div>
+
+  <style>
+    footer {
+      a {
+        text-decoration: none;
+      }
+    }
+  </style>
   <footer>
     <a href="./assets/brand.html">brand</a>
   </footer>

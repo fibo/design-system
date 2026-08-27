@@ -1,5 +1,5 @@
 :root {
-  /** System Font stacks from modernfontstacks.com */
+  /* System Font stacks from modernfontstacks.com */
   --font-sans: system-ui, sans-serif;
   --font-sans2:
     Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium',
@@ -11,7 +11,7 @@
     ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
     'DejaVu Sans Mono', monospace;
 
-  /** Font sizes based on Golden Section */
+  /* Font sizes based on Golden Section */
   --font-size: 16px;
   --font-size-small: 10px;
   --font-size-1: 110px;
@@ -21,7 +21,7 @@
 }
 
 html {
-  /** Disable text size adjustment */
+  /* Disable text size adjustment */
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
@@ -69,7 +69,7 @@ code {
   font-family: var(--font-mono);
 }
 
-/** Form elements */
+/* Form elements */
 
 button,
 input,

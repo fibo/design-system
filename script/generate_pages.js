@@ -12,14 +12,15 @@ const rootDir = dirname(import.meta.dirname)
  * Input files can be in html/ or doc/ folder according to the extension.
  */
 const pages = [
-  'homepage.html',
-  'heading.html',
-  'login.html',
+  'colors.md',
   'favicon.md',
-  'principles.md'
+  'homepage.html',
+  'login.html',
+  'principles.md',
+  'typography.md'
 ]
 
-const markdownIt = markdownItParser()
+const markdownIt = markdownItParser({ html: true })
 
 async function getHtml(fileName) {
   const extension = extname(fileName)

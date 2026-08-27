@@ -47,7 +47,7 @@ Optionally use two sans serif font families to differentiate between content and
 
 ## Spacing based on Fibonacci Sequence
 
-Define the smallest possible unit, for instance `--unit-1: 2px`, to be used to draw lines like a border width.
+Define the smallest possible unit, for instance `--size-1: 2px`, to be used to draw lines like a border width.
 The second unit will be double the first unit.
 All other units are the sum of the two previous ones, following the _Fibonacci Sequence_.
 

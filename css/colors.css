@@ -12,7 +12,7 @@
 }
 
 body {
-  background: var(--paper-2);
+  background: var(--paper-1);
 }
 
 h1,
@@ -34,7 +34,7 @@ blockquote {
   color: var(--ink-3);
 }
 
-/** Form elements */
+/* Form elements */
 
 button,
 input,

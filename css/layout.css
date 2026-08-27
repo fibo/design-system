@@ -1,5 +1,5 @@
 :root {
-  /** Space units based on Fibonacci Sequence */
+  /* Space units based on Fibonacci Sequence */
   --size-1: 2px;
   --size-2: 4px;
   --size-3: 6px;
@@ -15,7 +15,7 @@ html {
   scrollbar-gutter: stable;
 }
 
-/** Avoid overflow caused by embedded content */
+/* Avoid overflow caused by embedded content */
 audio,
 iframe,
 img,
@@ -25,12 +25,12 @@ video {
   max-inline-size: 100%;
 }
 
-/** Turn images into block elements */
+/* Turn images into block elements */
 img {
   display: block;
 }
 
-/** Form elements */
+/* Form elements */
 
 button,
 input,
